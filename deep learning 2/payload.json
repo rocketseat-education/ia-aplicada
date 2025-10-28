@@ -1,0 +1,22 @@
+{
+  "records": [
+    {
+      "Categoria": 4,
+      "Cor": "azul",
+      "Pais de Origem": "Alemanha",
+      "Ano Modelo": 2026,
+      "Ano Fabricação": 2025,
+      "Potencia": 143,
+      "Quantidade de lugares": 4,
+      "Unico dono?": 0,
+      "Ja teve sinistro?": 0,
+      "Ja foi carro de aplicativo?": 1,
+      "Revisoes em dia?": 1,
+      "Sistema avancado de Multimidia?": 1,
+      "Tipo de Motorizacao": "Híbrido",
+      "Kilometragem": 60459,
+      "Tipo de Transmissao": 3,
+      "Tamanho do porta malas": 430
+    }
+  ]
+}
