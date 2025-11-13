@@ -1,0 +1,14 @@
+artifact_uri: file:///home/vitor-linux/rockeatseat/ia-aplicada/deep%20learning%203/mlruns/962371771871347521/f365303b8c6e4d36ab9fb151e6af6a52/artifacts
+end_time: 1763002129488
+entry_point_name: ''
+experiment_id: '962371771871347521'
+lifecycle_stage: active
+run_id: f365303b8c6e4d36ab9fb151e6af6a52
+run_name: Passagens_Classifier_3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763000566582
+status: 3
+tags: []
+user_id: vitor-linux
