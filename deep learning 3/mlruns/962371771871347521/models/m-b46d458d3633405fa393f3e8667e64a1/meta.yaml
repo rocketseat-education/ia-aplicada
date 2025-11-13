@@ -1,0 +1,10 @@
+artifact_location: file:///home/vitor-linux/rockeatseat/ia-aplicada/deep%20learning%203/mlruns/962371771871347521/models/m-b46d458d3633405fa393f3e8667e64a1/artifacts
+creation_timestamp: 1763003962073
+experiment_id: '962371771871347521'
+last_updated_timestamp: 1763003968043
+model_id: m-b46d458d3633405fa393f3e8667e64a1
+model_type: null
+name: modelo_p
+source_run_id: 5fc7f8112c134630acacecb800db9bed
+status: 2
+status_message: null

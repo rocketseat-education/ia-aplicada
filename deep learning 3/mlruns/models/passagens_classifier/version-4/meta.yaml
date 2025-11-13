@@ -1,0 +1,15 @@
+creation_timestamp: 1763003968054
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1763003968054
+model_id: m-b46d458d3633405fa393f3e8667e64a1
+name: passagens_classifier
+run_id: 5fc7f8112c134630acacecb800db9bed
+run_link: null
+source: models:/m-b46d458d3633405fa393f3e8667e64a1
+status: READY
+status_message: null
+storage_location: file:///home/vitor-linux/rockeatseat/ia-aplicada/deep%20learning%203/mlruns/962371771871347521/models/m-b46d458d3633405fa393f3e8667e64a1/artifacts
+user_id: null
+version: 4
