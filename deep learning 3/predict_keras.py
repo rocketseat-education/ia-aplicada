@@ -1,15 +1,14 @@
-# mlflow models serve -m "models:/passagens_classifier/Production" -p 5001 --env-manager local --no-conda
-
+#  mlflow models serve -m "models:/passagens_classifier_keras/Production" -p 5002 --env-manager local --no-conda
 from typing import List, Dict, Any
 
 import pandas as pd
+import numpy as np
 import joblib
-import torch
 from pydantic import BaseModel
 import requests
 
 PREPROCESSOR_PATH = 'model/preprocessor.pkl'
-MODEL_API_URL = 'http://localhost:5001/invocations'
+MODEL_API_URL = 'http://localhost:5002/invocations'
 
 # Modelo de dados de entrada
 class Payload(BaseModel):
@@ -37,16 +36,10 @@ def predict(request: Payload):
 
     # Chamar o modelo treinado usando requests
     response = requests.post(MODEL_API_URL, json={"inputs": X_proc.tolist()})
-    logits = response.json()
-    print(f"Logits:{logits}")
-
-    # Transformar os logits de volta para classes originais, se necessário
-    tensor_preds = torch.tensor(logits['predictions'], dtype=torch.float32)
-    probs = torch.softmax(tensor_preds, dim=1)
-    print(f"Probs:{probs}")
-    predicted_classes = torch.argmax(probs, dim=1).tolist()
+    probs = response.json()
+    predicted_classes = np.argmax(probs)
     classes = ['Comprou', 'Não comprou', 'Preferiu aguardar e comprou depois']
-    preds = [classes[i] for i in predicted_classes]
+    preds = classes[predicted_classes]
     return {"predictions": preds}
 
 if __name__ == "__main__":
