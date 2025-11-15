@@ -1,8 +1,8 @@
 creation_timestamp: 1763002269592
-current_stage: None
+current_stage: Production
 deployment_job_state: null
 description: null
-last_updated_timestamp: 1763002269592
+last_updated_timestamp: 1763228042518
 model_id: m-e5bc805333da4166b53a40ad7a32f452
 name: passagens_classifier
 run_id: 63f8c42bb8df4686abccb3b9d6298be9
