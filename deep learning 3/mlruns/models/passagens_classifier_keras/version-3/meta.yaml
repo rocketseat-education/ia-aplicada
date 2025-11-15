@@ -1,0 +1,15 @@
+creation_timestamp: 1763231017018
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1763231017018
+model_id: m-cdcaef67a4974c94a6d88852c67df647
+name: passagens_classifier_keras
+run_id: f6bbc3d709a24cb4ac91a5868d9e1b6f
+run_link: null
+source: models:/m-cdcaef67a4974c94a6d88852c67df647
+status: READY
+status_message: null
+storage_location: file:///home/vitor-linux/rockeatseat/ia-aplicada/deep%20learning%203/mlruns/536835480432553252/models/m-cdcaef67a4974c94a6d88852c67df647/artifacts
+user_id: null
+version: 3
