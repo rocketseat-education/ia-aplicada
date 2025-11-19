@@ -1,0 +1,14 @@
+artifact_uri: file:///home/vitor-linux/rockeatseat/ia-aplicada/deep%20learning%203/desafio%20deep%20learning%203/mlruns/533929338513464041/18bb25af9dc04449b118549db8c04db6/artifacts
+end_time: 1763514892982
+entry_point_name: ''
+experiment_id: '533929338513464041'
+lifecycle_stage: active
+run_id: 18bb25af9dc04449b118549db8c04db6
+run_name: Shallow
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763514868594
+status: 3
+tags: []
+user_id: vitor-linux

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/vitor-linux/rockeatseat/ia-aplicada/deep%20learning%203/desafio%20deep%20learning%203/mlruns/533929338513464041/5bc72c4544494cabbc5d0f23b93d443c/artifacts
+end_time: 1763515190852
+entry_point_name: ''
+experiment_id: '533929338513464041'
+lifecycle_stage: active
+run_id: 5bc72c4544494cabbc5d0f23b93d443c
+run_name: Medium
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763515167491
+status: 3
+tags: []
+user_id: vitor-linux
