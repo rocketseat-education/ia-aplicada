@@ -6,7 +6,7 @@
 
 ---
 
-## 1. Contexto e objetivo
+## Contexto e objetivo
 
 Até agora todo o trabalho aconteceu dentro do notebook: você carregou os dados,
 pré-processou, treinou a rede e avaliou os resultados. Mas um modelo que só roda no
@@ -26,7 +26,7 @@ montado e o esqueleto do `api.py` com os imports e as constantes.
 
 ---
 
-## 2. A ideia central: a API tem que reproduzir o treino
+## A ideia central: a API tem que reproduzir o treino
 
 Esse é o conceito que amarra a aula inteira, então vale parar nele.
 
@@ -54,7 +54,7 @@ que foi treinado.
 
 ---
 
-## 3. Por que exportar o `preprocessor`
+## Por que exportar o `preprocessor`
 
 O `preprocessor` é um `ColumnTransformer` do scikit-learn. Ele empacota, num único
 objeto, todas as transformações de **entrada** (as features `X`):
@@ -93,7 +93,7 @@ como ficou após o treino.
 
 ---
 
-## 4. Por que exportar o `scaler_y` (MinMaxScaler do alvo)
+## Por que exportar o `scaler_y` (MinMaxScaler do alvo)
 
 Esse é o ponto que costuma gerar mais dúvida, então vamos com calma.
 
@@ -130,7 +130,7 @@ inversão devolveria um número sem sentido.
 
 ---
 
-## 5. Salvando os artefatos no notebook
+## Salvando os artefatos no notebook
 
 Com o "porquê" entendido, salvar é a parte fácil. São duas chamadas com `joblib` para os
 objetos do scikit-learn:
@@ -176,7 +176,7 @@ Dois detalhes importantes aqui:
 
 ---
 
-## 6. Resultado: 3 artefatos em `model/`
+## Resultado: 3 artefatos em `model/`
 
 Depois de rodar o notebook, a pasta `model/` deve conter:
 
@@ -192,7 +192,7 @@ previsão.
 
 ---
 
-## 7. Levando os artefatos para a máquina local
+## Levando os artefatos para a máquina local
 
 No curso, o treino aconteceu no **Google Colab**. A API, porém, vamos construir e rodar
 **localmente**. Por quê?
@@ -223,7 +223,7 @@ artefatos dentro de uma pasta `model/`.
 
 ---
 
-## 8. O payload de teste (`payload.json`)
+## O payload de teste (`payload.json`)
 
 Para testar a API sem precisar montar a requisição na mão toda vez, deixamos um exemplo
 pronto: o `payload.json`. Ele representa o **corpo (body)** que será enviado para a API.
@@ -266,7 +266,7 @@ Pontos a observar:
 
 ---
 
-## 9. O `requirements.txt` — as dependências
+## O `requirements.txt` — as dependências
 
 Para o projeto rodar em qualquer máquina, fixamos as versões das bibliotecas:
 
@@ -313,7 +313,7 @@ E os pacotes que você já conhece, mas que continuam necessários:
 
 ---
 
-## 10. O começo do `api.py` — imports e constantes
+## O começo do `api.py` — imports e constantes
 
 Com tudo preparado, criamos o arquivo `api.py`. Nesta aula ele ainda fica só no começo:
 os **imports** e as **constantes** com os caminhos dos artefatos.
@@ -363,7 +363,7 @@ estrutura de pastas montada na seção 7:
 
 ---
 
-## 11. Recapitulando e próximos passos
+## Recapitulando e próximos passos
 
 Nesta aula você:
 

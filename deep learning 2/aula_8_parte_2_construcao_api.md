@@ -25,7 +25,7 @@ Tudo o que vem a seguir é continuação **deste mesmo arquivo**.
 
 ---
 
-## 1. Instanciar a aplicação
+## Instanciar a aplicação
 
 A primeira coisa é criar o objeto que **é** a API. Por convenção, chamamos essa variável
 de `app` e a instanciamos com a classe `FastAPI`:
@@ -43,7 +43,7 @@ app = FastAPI(title="Preço de Veículos - API Inferência")
 
 ---
 
-## 2. O modelo de dados de entrada (Pydantic)
+## O modelo de dados de entrada (Pydantic)
 
 Antes de receber requisições, definimos **o formato** dos dados que a API aceita. Fazemos
 isso com uma classe que herda de `BaseModel`, a classe principal do Pydantic:
@@ -75,7 +75,7 @@ coisa** (`Any`). Isso casa exatamente com o `payload.json` da Parte 1:
 
 ---
 
-## 3. Trazer a classe da rede neural
+## Trazer a classe da rede neural
 
 Aqui está um ponto importante que vem lá da Parte 1: quando salvamos o modelo com
 `torch.save(model.state_dict(), ...)`, gravamos **apenas os pesos**, não a arquitetura.
@@ -137,7 +137,7 @@ não baterem, os pesos do `best_model.pth` não vão encaixar.
 
 ---
 
-## 4. Uma função para carregar os artefatos do scikit-learn
+## Uma função para carregar os artefatos do scikit-learn
 
 Uma pequena função utilitária que carrega o `preprocessor` e o `minmaxscaler` do disco:
 
@@ -158,7 +158,7 @@ Ela apenas faz dois `joblib.load` e devolve os dois objetos. Vamos chamá-la den
 
 ---
 
-## 5. Definindo os endpoints — o `/health`
+## Definindo os endpoints — o `/health`
 
 Agora começa a parte de **expor** funções como endpoints REST. No FastAPI isso é feito com
 um **decorator** (o `@`) em cima da função, referenciando o `app` que criamos:
@@ -183,7 +183,7 @@ o modelo responde, etc. — para garantir que a API está realmente pronta para 
 
 ---
 
-## 6. O endpoint principal — o `/predict`
+## O endpoint principal — o `/predict`
 
 Esse é o coração da API. Ele recebe os dados de um carro e devolve o preço previsto.
 
@@ -309,7 +309,7 @@ Passo a passo:
 
 ---
 
-## 7. O `api.py` completo
+## O `api.py` completo
 
 Juntando tudo, este é o arquivo final desta aula:
 
@@ -419,7 +419,7 @@ def predict(request: Payload):
 
 ---
 
-## 8. Recapitulando e próximos passos
+## Recapitulando e próximos passos
 
 Nesta aula você construiu a API completa:
 

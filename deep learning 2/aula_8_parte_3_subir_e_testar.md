@@ -15,7 +15,7 @@ Para testar, vamos trabalhar com **dois terminais** abertos lado a lado (no VS C
 
 ---
 
-## 1. Subir o servidor com o Uvicorn (Terminal 1)
+## Subir o servidor com o Uvicorn (Terminal 1)
 
 Lembre da Parte 1: o **Uvicorn** é o servidor web que mantém a API no ar. Ele não é
 importado no código — é chamado pela linha de comando, apontando para a nossa aplicação.
@@ -50,7 +50,7 @@ rodando** e abra um segundo.
 
 ---
 
-## 2. Testar com `curl` (Terminal 2)
+## Testar com `curl` (Terminal 2)
 
 O `curl` é uma ferramenta de linha de comando para fazer requisições HTTP — perfeita para
 testar uma API rapidinho. No segundo terminal (também na pasta do projeto, onde está o
@@ -90,7 +90,7 @@ Esse é o **preço de venda estimado** para o carro do `payload.json`: cerca de
 
 ---
 
-## 3. Acompanhando os dois lados
+## Acompanhando os dois lados
 
 É instrutivo olhar os dois terminais ao mesmo tempo:
 
@@ -113,7 +113,7 @@ funcionando.
 
 ---
 
-## 4. O quadro completo — o que construímos no Laboratório 8
+## O quadro completo — o que construímos no Laboratório 8
 
 Com a API respondendo, fechamos o caminho inteiro, do treino à entrega:
 
@@ -136,7 +136,7 @@ Com a API respondendo, fechamos o caminho inteiro, do treino à entrega:
 
 ---
 
-## 5. Conclusão
+## Conclusão
 
 Com isso encerramos o **Laboratório 8** e o módulo de **Deep Learning 2**, em que o foco
 foi usar o **PyTorch** para um problema de **regressão**: partimos do dataset e do
